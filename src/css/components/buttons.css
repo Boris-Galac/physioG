@@ -1,0 +1,75 @@
+button {
+  background-color: transparent;
+  border: 0;
+}
+.cta-btn {
+  height: max-content;
+  width: max-content;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: hsl(104, 100%, 82%);
+  outline: 2px solid var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vmax;
+  gap: 10px;
+  color: var(--dark);
+  font-weight: 600;
+  transition: 0.3s;
+}
+.cta-btn:hover {
+  background-color: hsl(104, 100%, 90%);
+  box-shadow: 0 0 1rem green;
+}
+.call-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  z-index: 1000;
+  animation: call 1s infinite alternate ease-in-out;
+}
+@keyframes call {
+  from {
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+    scale: 1;
+  }
+  to {
+    filter: drop-shadow(0 0 15px rgb(8, 255, 8));
+    scale: 1.2;
+  }
+}
+.cjenik-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2.5rem;
+  padding-block: 0.6rem;
+  font-weight: 500;
+  font-family: inherit;
+  width: max-content;
+  height: max-content;
+  background-color: hsl(36, 55%, 57%);
+  color: var(--white);
+  gap: 1rem;
+  border-radius: 100vmax;
+  outline: 2px solid hsl(36, 55%, 40%);
+  cursor: pointer;
+}
+.contact-btn {
+  background: linear-gradient(to right, hsl(104, 34%, 48%), hsl(104, 57%, 60%));
+  border-radius: 100vmax;
+  outline: 2px solid hsl(104, 34%, 48%);
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media (min-width: 1024px) {
+  .contact-btn {
+    font-size: 1.2rem;
+  }
+}

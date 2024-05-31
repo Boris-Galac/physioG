@@ -1,0 +1,101 @@
+.ponuda {
+  position: relative;
+  padding-block: 6rem;
+  background-color: hsl(0, 21%, 95%);
+  isolation: isolate;
+}
+.ponuda::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/src/assets/images/spine-overlay.png") no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.ponuda--heading {
+  color: var(--dark);
+  margin-bottom: 3rem;
+}
+.ponuda-block {
+  position: relative;
+}
+.ponuda__paragraph {
+  position: absolute;
+  top: 0;
+  color: var(--dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  isolation: isolate;
+  z-index: 2;
+  padding-left: 1.5rem;
+}
+.ponuda__paragraph::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 70%;
+  background: linear-gradient(to right, hsl(29, 25%, 80%), transparent);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  border-radius: 100vmax;
+}
+.ponuda__paragraph--right {
+  position: absolute;
+  top: 0;
+  color: var(--dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  isolation: isolate;
+  z-index: 2;
+  padding-right: 1.5rem;
+  right: 0;
+}
+.ponuda__paragraph--right::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 70%;
+  background: linear-gradient(to left, hsl(29, 25%, 80%), transparent);
+  z-index: -1;
+  bottom: 0;
+  left: unset;
+  border-radius: 100vmax;
+  right: 0;
+}
+.cjenik__wrapper {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 100vmax;
+  outline: 3px solid hsl(34, 27%, 72%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cjenik__wrapper span {
+  font-weight: 500;
+  color: var(--dark);
+}
+@media (min-width: 1024px) {
+  .ponuda-block {
+    display: flex;
+  }
+  .ponuda-block:nth-child(odd) img {
+    margin-left: auto;
+  }
+  .ponuda-block:nth-child(odd) p {
+    margin-left: auto;
+  }
+  .ponuda__paragraph {
+    font-size: 3rem;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 50%;
+    line-height: 120%;
+  }
+}

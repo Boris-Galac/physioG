@@ -1,0 +1,311 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet." />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="/src/css/style.css" /> -->
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/src/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo"
+        ><img src="/src/assets/images/header-logo.png" alt="header logo"
+      /></a>
+      <nav class="nav" id="nav" aria-expanded="false">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#o-nama" class="nav__link">O nama</a></li>
+          <li class="nav__item"><a href="#ponuda" class="nav__link">Ponuda</a></li>
+          <li class="nav__item"><a href="#recenzije" class="nav__link">Recenzije</a></li>
+          <li class="nav__item"><a href="#galerija" class="nav__link">Galerija</a></li>
+          <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button
+        class="ham-btn"
+        aria-label="ham button"
+        data-active="false"
+        tabindex="0"
+        aria-controls="nav"
+      >
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+      </button>
+    </header>
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero__body-content-wrapper">
+          <div class="hero__body-text">
+            <h1 class="headline hidden-left">PREPUSTITE VAŠU BOL NAŠIM RUKAMA</h1>
+            <p class="subheadline hidden-left" style="animation-delay: .4s;">
+              Nudimo široku paletu masaža i ostalih rehabilitacijskih metoda
+              koje će Vas povratiti u život!
+            </p>
+            <a class="cta-btn hidden-left" style="animation-delay: .7s;" href="#ponuda" role="button"
+              >Istraži što sve nudimo
+              <img src="/src/assets/icons/cta-arrow-icon.svg"
+            /></a>
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(min-width: 600px)"
+            srcset="/src/assets/images/hero-img.jpg"
+          />
+          <img
+            src="/src/assets/images/hero-img-mini.jpg"
+            alt="hero-image"
+            class="hero-img"
+          />
+        </picture>
+        <a href="tel:+385911410995" class="call-btn"
+          ><img src="/src/assets/icons/header-phone-icon.svg" alt="call btn"
+        /></a>
+        <div class="socials">
+          <a href="#"><img src="/src/assets/icons/socials-fb.svg" alt="facebook"></a>
+          <a href="#"><img src="/src/assets/icons/socials-gmail.svg" alt="gmail"></a>
+          <a href="#"><img src="/src/assets/icons/socials-insta.svg" alt="instagram"></a>
+        </div>
+        <a href="#o-nama" class="scroll-down-btn"><img src="/src/assets/icons/scroll-down-icon.svg" alt="scroll down"></a>
+      </section>
+      <!-- O NAMA SECTION -->
+      <section class="o-nama" id="o-nama">
+        <div class="container">
+          <div class="o-nama-wrapper">
+            <img
+              src="/src/assets/images/gabriela-img.png"
+              alt="gabriela malovčak"
+            />
+            <div class="o-nama__text-box">
+              <h2 class="h2-heading o-nama--heading">
+                <img src="/src/assets/images/o-nama-logo.png" />
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
+                voluptas adipisci. Nostrum accusantium tempora dicta soluta,
+                enim omnis ipsum necessitatibus dolor numquam sint animi dolore
+                ratione, odit id quisquam voluptatum suscipit accusamus non
+                doloremque eligendi alias, autem harum? Laboriosam, eius!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PONUDA SECTION -->
+      <section class="ponuda" id="ponuda">
+        <div class="container">
+          <div class="ponuda-wrapper">
+            <h2 class="h2-heading ponuda--heading h2-heading-effect">ponuda</h2>
+            <div class="ponuda__content-wrapper">
+              <figure class="ponuda-block">
+                <img class="hidden-left" style="animation-delay: .3s;" src="/src/assets/images/masaža/sportska-img.png" alt="sportska masaža">
+                <p class="ponuda__paragraph hidden-left" style="animation-delay: .15s;">sportska masaža</p>
+              </figure>
+              <figure class="ponuda-block">
+                <img src="/src/assets/images/masaža/klasicna-img.png" class="hidden-right" style="animation-delay: .3s;" alt="klasicna masaža">
+                <p class="ponuda__paragraph ponuda__paragraph--right hidden-right" style="animation-delay: .15s;">klasična masaža</p>
+              </figure>
+              <figure class="ponuda-block">
+                <img src="/src/assets/images/masaža/relax-img.png" class="hidden-left" style="animation-delay: .3s;" alt="relax masaža">
+                <p class="ponuda__paragraph hidden-left" style="animation-delay: .15s;">relax masaža</p>
+              </figure>
+              <figure class="ponuda-block">
+                <img src="/src/assets/images/masaža/lice-img.png" class="hidden-right" style="animation-delay: .3s;" alt="masaža lica i vrata">
+                <p class="ponuda__paragraph ponuda__paragraph--right hidden-right" style="animation-delay: .15s;">masaža lica i vrata</p>
+              </figure>
+              <figure class="ponuda-block">
+                <img src="/src/assets/images/masaža/stopalo-img.png" class="hidden-left" style="animation-delay: .3s;" alt="masaža stopala">
+                <p class="ponuda__paragraph hidden-left" style="animation-delay: .15s;">masaža stopala</p>
+              </figure>
+              <figure class="ponuda-block">
+                <img src="/src/assets/images/masaža/prenatalna-img.png" class="hidden-right" style="animation-delay: .3s;" alt="prenatalna masaža">
+                <p class="ponuda__paragraph ponuda__paragraph--right hidden-right" style="animation-delay: .15s;">prenatalna masaža</p>
+              </figure>
+          </div>
+          <div class="cjenik__wrapper">
+            <span>Pogledaj naš cjenik usluga</span><a href="/src/assets/cjenik.pdf" download class="cjenik-btn">Cjenik <img src="/src/assets/icons/list-icon.svg"></a></a>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS SECTION -->
+      <section class="testimonials" id="recenzije">
+        <div class="container">
+          <div class="testimonials__wrapper">
+            <h2 class="h2-heading testimonials-heading h2-heading-effect">recenzije</h2>
+            <div class="testimonials__content-wrapper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper swiper-wrapper">
+                <div class="swiper-slide testimonial-card">
+                  <p>Sve preporuke i za masažu za trudnice 🤰☺️
+                    Atmosfera, ambijent i sama masaža tooop!
+                    A Gabriela uvijek dobro raspolozena i vedra 😁❤️</p>
+                    <h3>Ana Peroković</h3>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                  <p>I ja, kao kolegica fizioterapeut/maser, ponekad trebam dobru masažu.
+                    Odlučila sam se prepustiti u Gabrijeline ruke i mogu samo reći TOP!🤗🤗
+                    Hvala Gabi.❤️</p>
+                    <h3>Matea Belak</h3>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                  <p>Gabi legenda, svakome bi preporučila masažu jer i sama sam prezadovoljna kad me razbije. Rođena je za taj posao!😊❤️</p>
+                    <h3>Josipa Buha</h3>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                  <p>Znači…Ljudi dragi..supruga i mene Gabriela je jednostavno resetirala!!!Cura je odradila takav posao da se ponovno vraćamo i to kao stalni klijenti!
+                    Svaka preporuka od ❤️</p>
+                    <h3>Anđelka Sabljak</h3>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                  <p>Dragi ljudi!Tko nije ovako nešto probao ne zna što je propustio jer ovakvu masažu odradi samo vrhunski majstor Gabriela.
+                    Svaka preporuka!</p>
+                    <h3>Goran Sabljak</h3>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                  <p>Nakon svake masaže se preporodim.Obzirom da se bavim trčanjem na duge staze i teretanicom svakodnevno,njena regeneracija me nakon teških treninga vraća u život i daje snagu za nove utrke i treninge.
+                    Ne želim biti škrta i njene čudnovate rukice čuvati samo za sebe već ju svima preporučam,bilo za opuštanje,sportsku masažu ili terapijsku.
+                    Gabi ❤️</p>
+                    <h3>Ivana Devald</h3>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- GALLERY SECTION -->
+      <section class="gallery" id="galerija">
+        <div class="swiper gallery-swiper">
+          <div class="swiper-wrapper">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (1).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (2).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (3).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (4).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (5).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (6).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (7).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (8).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (9).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (10).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (11).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (12).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (13).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (14).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (15).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (16).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (17).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (18).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (19).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (20).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (21).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (22).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (23).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (24).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (25).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (26).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (27).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (28).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (29).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (30).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (31).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (32).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (33).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (34).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (35).jpg" alt="image physioG">
+            <img class="swiper-slide" src="/src/assets/images/gallery/img (36).jpg" alt="image physioG">
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section class="contact" id="kontakt">
+        <div class="container">
+          <div class="contact__wrapper">
+            <h2 class="h2-heading testimonials-heading h2-heading-effect">kako do nas</h2>
+            <div class="contact__content-wrapper">
+              <div class="contact__col">
+                <div class="contact__row">
+                  <p>Ukoliko trebate zakazati termin ili želite nam poslati poruku, slobodno možete klikom na gumb.</p>
+                  <a href="mailto:physiogobrt@gmail.com" class="contact-btn">Pošalji mail <img src="/src/assets/icons/gmail-contact-icon.svg"></a>
+                </div>
+                <div class="contact__row">
+                  <p>ili, nas jednostavno nazovite</p>
+                  <a href="tel:+385911410995" class="contact-btn">Nazovi <img src="/src/assets/icons/contact-phone-icon.svg"></a>
+                </div>
+              </div>
+              <div class="contact__col">
+                <div class="contact__row">
+                  <div class="contact__second-col-text">
+                    <img src="/src/assets/icons/house-icon.svg" alt="house">
+                    <p>Ivana Gorana Kovačića 55, Našice, Hrvatska 31500</p>
+                  </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.7768974136625!2d18.104401477528736!3d45.49443727107446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475d0dc90c255865%3A0x98a0d3fad7e6f88e!2sUl.%20Ivana%20Gorana%20Kova%C4%8Di%C4%87a%2055%2C%2031500%2C%20Na%C5%A1ice!5e0!3m2!1sen!2shr!4v1717167832334!5m2!1sen!2shr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__row">
+            <a href="#"><img src="/src/assets/icons/footer-logo.svg" alt="footer logo"></a>
+          </div>
+          <div class="footer__row">
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">O nama</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Ponuda</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Recenzije</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Galerija</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__row">
+            <div class="footer__info">
+              <div class="footer__info-row">
+                <img src="/src/assets/icons/footer-house-icon.svg" alt="house">
+                <p>Ivana Gorana Kovačića 55, Našice, Hrvatska 31500</p>
+              </div>
+              <div class="footer__info-row">
+                <img src="/src/assets/icons/footer-mail-icon.svg" alt="mail">
+                <p>physiogobrt@gmail.com</p>
+              </div>
+              <div class="footer__info-row">
+                <img src="/src/assets/icons/footer-phone-icon.svg" alt="phone">
+                <p>+385 91 141 0995</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 PhysioG - All Rights Reserved. </p>
+      </div>
+    </footer>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

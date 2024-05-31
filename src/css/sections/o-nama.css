@@ -1,0 +1,36 @@
+.o-nama {
+  isolation: isolate;
+  padding-block: 6rem;
+}
+.o-nama::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: url("/src/assets/images/o-nama-overlay.svg") no-repeat center
+    center/cover;
+  z-index: -1;
+}
+.o-nama-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.o-nama {
+  color: var(--dark);
+}
+.o-nama__text-box {
+  display: grid;
+  place-items: center;
+}
+.o-nama__text-box p {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .o-nama-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}

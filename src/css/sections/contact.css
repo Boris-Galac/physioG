@@ -1,0 +1,48 @@
+.contact {
+  padding-block: 6rem;
+  isolation: isolate;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  background: url("/src/assets/images/contact-overlay.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
+}
+.contact__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact__col {
+  display: grid;
+  gap: 2rem;
+}
+.contact__row {
+  display: grid;
+  gap: 1rem;
+}
+.map {
+  outline: 6px solid hsl(204, 30%, 75%);
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+}
+.contact__second-col-text {
+  display: flex;
+  gap: 1rem;
+}
+.contact__second-col-text img {
+  object-fit: contain;
+}
+@media (min-width: 1200px) {
+  .contact__content-wrapper {
+    flex-direction: row;
+  }
+  .contact__col {
+    width: 50%;
+  }
+}

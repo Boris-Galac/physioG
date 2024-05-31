@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+p {
+  line-height: 160%;
+}
+.h2-heading {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+.h2-heading-effect {
+  position: relative;
+  isolation: isolate;
+  padding-left: 4rem;
+}
+.h2-heading-effect:before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 70%;
+  background-color: hsl(42, 41%, 84%);
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+}
+.o-nama--heading {
+  margin-bottom: 1rem;
+}
+.testimonials-heading {
+  color: var(--dark);
+  margin-bottom: 3rem;
+}
+.testimonial-card p {
+  color: var(--dark);
+  line-height: 170%;
+  margin-bottom: 1.5rem;
+}
+.testimonial-card h3 {
+  color: var(--dark);
+}
+.contact p {
+  color: var(--dark);
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  .headline {
+    max-width: 30ch;
+  }
+}

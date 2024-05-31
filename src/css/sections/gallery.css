@@ -1,0 +1,19 @@
+.gallery {
+  background-color: rgb(67, 73, 79);
+}
+.gallery-swiper {
+  height: 600px;
+}
+.gallery-swiper img {
+  height: 100%;
+  width: 100%;
+}
+.gallery-swiper .swiper-wrapper {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .gallery-swiper {
+    height: 100%;
+  }
+}
