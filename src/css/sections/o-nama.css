@@ -25,7 +25,11 @@
   place-items: center;
 }
 .o-nama__text-box p {
-  text-align: center;
+  text-align: right;
+}
+.o-nama__text-box span {
+  font-weight: 700;
+  color: var(--dark);
 }
 @media (min-width: 1024px) {
   .o-nama-wrapper {
