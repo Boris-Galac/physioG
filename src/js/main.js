@@ -21,11 +21,11 @@ navLink.forEach((link) => {
 
 // swiper testimonials
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".testimoial-swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides: true,
-  // loop: true,
+  loop: true,
   autoplay: true,
   breakpoints: {
     640: {
@@ -40,6 +40,10 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 5,
       spaceBetween: 50,
     },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -79,26 +83,36 @@ left.forEach((el) => observer.observe(el));
 const right = document.querySelectorAll(".hidden-right");
 right.forEach((el) => observer.observe(el));
 // bottom
-const bottom = document.querySelectorAll(".hidden-bottom");
-bottom.forEach((el) => observer.observe(el));
+const fade = document.querySelectorAll(".hidden-fade");
+fade.forEach((el) => observer.observe(el));
 
-// const cjenikBtn = document.querySelector('.cjenik-btn')
-// cjenikBtn.addEventListener('click', (e)=>{
-//   // Create a link element
-//   const link = document.createElement('a');
+//// BACK TO TOP
 
-//   // Set the href attribute to the path of the PDF file
-//   link.href = 'path/to/cjenik.pdf'; // Update this path to the correct location of your PDF file
+const backToTopbtn = document.querySelector(".back-to-top-btn");
 
-//   // Set the download attribute with a value that will be the name of the downloaded file
-//   link.download = '/';
+backToTopbtn.addEventListener("click", (e) => {
+  window.scroll({
+    top: 0,
+  });
+});
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY > 150) {
+    backToTopbtn.setAttribute("data-visible", "true");
+  } else backToTopbtn.setAttribute("data-visible", "false");
+});
 
-//   // Append the link to the body (it needs to be in the document for the click to work)
-//   document.body.appendChild(link);
+/////////// HIDE HEADER ON SCROLL
 
-//   // Trigger the click event on the link
-//   link.click();
-
-//   // Remove the link from the document
-//   document.body.removeChild(link);
-// })
+let lastScrollTop = 0;
+let navbar = document.querySelector(".header");
+let navbarHeight = document.querySelector(".header").scrollHeight;
+console.log(navbarHeight);
+window.addEventListener("scroll", (e) => {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    navbar.style.top = `-${navbarHeight}px`;
+  } else {
+    navbar.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
+});

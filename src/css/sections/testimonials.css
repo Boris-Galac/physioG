@@ -12,13 +12,14 @@
   height: 100%;
   z-index: -1;
 }
-.testimonials__wrapper {
-}
-.testimonials__content-wrapper {
-}
 .swiper-wrapper {
   height: max-content;
 }
+.testimoial-swiper .swiper-button-next,
+.testimoial-swiper .swiper-button-prev {
+  display: none;
+}
+
 .testimonial-card {
   position: relative;
   background-color: hsl(33, 44%, 95%);
@@ -52,5 +53,10 @@
     padding: 2rem;
     box-shadow: 0 24px 54px rgba(0, 0, 0, 0.204);
     height: max-content;
+  }
+  .testimoial-swiper .swiper-button-next,
+  .testimoial-swiper .swiper-button-prev {
+    display: block;
+    color: green;
   }
 }

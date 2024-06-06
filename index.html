@@ -82,6 +82,7 @@
             <img
               src="/src/assets/images/gabriela-img.png"
               alt="gabriela malovčak"
+              class="hidden-fade"
             />
             <div class="o-nama__text-box">
               <h2 class="h2-heading o-nama--heading">
@@ -89,12 +90,12 @@
               </h2>
               <p>
                 Gabriela Malovčak, vlasnica PhysioG obrta, prvostupnica je fizioterapije sa višegodišnjim iskustvom u radu. Radno iskustvo započinje obavljanjem stručne prakse i pripravništva u ustanovama na području Osječko-baranjske i Vukovarsko-srijemske županije. Iskustvo nadograđuje mnogobrojnim edukacijama te seminarima u području fizioterapije:  <br>
-<span>• manipulacija kralježnice</span>  <br>
-<span>• manipulacija donjih i gornjih ekstremiteta</span>  <br>
-<span>• trigger point therapy</span>  <br>
-<span>• prenatalno vježbanje</span>  <br>
-<span>• praktičan pristup u rehabilitaciji boli u donjem dijelu leđa</span>  <br>
-<span>• diferencijalna dijagnostika i rehabilitacija boli u zglobu kuka</span>  <br>
+<span class="hidden-right" style="animation-delay: .1s;">• manipulacija kralježnice</span>  <br>
+<span class="hidden-right" style="animation-delay: .2s;">• manipulacija donjih i gornjih ekstremiteta</span>  <br>
+<span class="hidden-right" style="animation-delay: .3s;">• trigger point therapy</span>  <br>
+<span class="hidden-right" style="animation-delay: .4s;">• prenatalno vježbanje</span>  <br>
+<span class="hidden-right" style="animation-delay: .5s;">• praktičan pristup u rehabilitaciji boli u donjem dijelu leđa</span>  <br>
+<span class="hidden-right" style="animation-delay: .6s;">• diferencijalna dijagnostika i rehabilitacija boli u zglobu kuka</span>  <br>
               </p>
             </div>
           </div>
@@ -147,7 +148,7 @@
             <h2 class="h2-heading testimonials-heading h2-heading-effect">recenzije</h2>
             <div class="testimonials__content-wrapper">
             <!-- Swiper -->
-            <div class="swiper mySwiper">
+            <div class="swiper testimoial-swiper">
               <div class="swiper-wrapper swiper-wrapper">
                 <div class="swiper-slide testimonial-card">
                   <p>Sve preporuke i za masažu za trudnice 🤰☺️
@@ -182,6 +183,8 @@
                     <h3>Ivana Devald</h3>
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
             </div>
           </div>
@@ -262,6 +265,13 @@
         </div>
       </section>
     </main>
+    <button
+    class="back-to-top-btn"
+    data-visible="false"
+    aria-label="scroll to top of the page"
+  >
+    <img src="/src/assets/icons/top-icon.svg" alt="scroll to top icon" />
+  </button>
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">

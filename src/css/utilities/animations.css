@@ -31,26 +31,13 @@
     opacity: 1;
   }
 }
-.hidden-bottom {
+.hidden-fade {
   opacity: 0;
-  transform: translateY(50%);
 }
-.hidden-bottom.active {
-  animation: bottom forwards 0.8s ease-out;
+.hidden-fade.active {
+  animation: fade forwards 2s ease-out;
 }
-@keyframes bottom {
-  from {
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-.car-show {
-  animation: car-show 4s forwards;
-}
-@keyframes car-show {
+@keyframes fade {
   from {
     opacity: 0;
   }

@@ -67,9 +67,41 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  transition: 0.3s;
+}
+.contact-btn:hover {
+  background: linear-gradient(to right, hsl(104, 34%, 60%), hsl(104, 57%, 70%));
 }
 @media (min-width: 1024px) {
   .contact-btn {
     font-size: 1.2rem;
   }
+}
+/* back to top */
+.back-to-top-btn {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 100vmax;
+  aspect-ratio: 1;
+  width: 50px;
+  position: fixed;
+  bottom: 1.7rem;
+  left: 1rem;
+  border: 2px solid hsl(0, 0%, 16%);
+  transition: 0.2s;
+  display: grid;
+  place-items: center;
+  z-index: 5;
+  cursor: pointer;
+}
+.back-to-top-btn:hover {
+  background-color: hsl(0, 0%, 7%);
+}
+.back-to-top-btn[data-visible="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.back-to-top-btn[data-visible="true"] {
+  opacity: 1;
+  pointer-events: visible;
 }
