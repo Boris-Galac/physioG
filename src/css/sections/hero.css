@@ -35,6 +35,9 @@
   gap: 1rem;
   flex-direction: column;
 }
+.socials img {
+  width: 32px;
+}
 .scroll-down-btn {
   position: absolute;
   bottom: 3rem;
