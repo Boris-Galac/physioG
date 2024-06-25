@@ -62,4 +62,7 @@
     left: 4rem;
     bottom: 3rem;
   }
+  .hero__body-text {
+    padding-inline: 4rem;
+  }
 }
